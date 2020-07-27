@@ -1,0 +1,34 @@
+-- This is the first query:
+
+SELECT DISTINCT year from population_years;
+
+-- Add your additional queries below:
+
+select *
+from population_years
+where country = 'Gabon'
+order by population desc;
+
+select *
+from population_years
+where year = 2005
+limit 10;
+
+select distinct country
+from population_years
+where population > 100
+and year = 2010;
+
+select distinct country
+from population_years
+where country like '%islands%';
+
+select *
+from population_years
+where country = 'Indonesia'
+and year = 2010;
+
+select *
+from population_years
+where country = 'Indonesia'
+and year = 2000;
